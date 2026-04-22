@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAX — Черненко & Чернявский</title>
+  <meta name="description" content="Отдельная страница MAX для портфолио-сайта.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>try{if(localStorage.getItem('am-site-theme')==='light')document.documentElement.dataset.theme='light'}catch(e){}</script>
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body class="max-page">
+  <div class="grain"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header>
+    <nav>
+      <div class="logo">A&amp;M</div>
+      <ul class="menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="projects.html">Проекты</a></li>
+        <li><a href="contacts.html" class="active">Контакты</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" aria-label="Переключить тему">◐</button>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main class="max-main">
+    <section class="max-fullscreen reveal">
+      <img class="max-fullscreen-image" src="images/8104b05ef37c4a6cf58ff6ccd0976eac.jpg" alt="MAX">
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span data-year></span> Александр Черненко &amp; Матвей Чернявский<br>ГБПОУ ПК им. Н.Н. Годовикова</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Образование — Черненко &amp; Чернявский</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Образование — Черненко & Чернявский</title>
+  <meta name="description" content="Где мы учимся, какие темы уже прошли и как обучение связано с нашими проектами.">
+  <meta property="og:title" content="Образование — Черненко & Чернявский">
+  <meta property="og:description" content="Учебный контекст, предметы и практические направления развития.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>try{if(localStorage.getItem('am-site-theme')==='light')document.documentElement.dataset.theme='light'}catch(e){}</script>
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
   <div class="grain"></div>
@@ -18,80 +24,73 @@
         <li><a href="about.html">О нас</a></li>
         <li><a href="skills.html">Навыки</a></li>
         <li><a href="education.html" class="active">Образование</a></li>
+        <li><a href="projects.html">Проекты</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
       </ul>
+      <button class="theme-toggle" type="button" aria-label="Переключить тему">◐</button>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
     </nav>
   </header>
 
   <main>
-    <h1 class="page-title reveal">Образование</h1>
+    <section class="section-head reveal">
+      <p class="eyebrow">Учеба</p>
+      <h1 class="page-title">Образование</h1>
+      <p class="section-lead">Здесь собран учебный контекст: что именно мы изучаем и как это переходит в навыки и проекты.</p>
+    </section>
 
     <section class="edu-block reveal" data-delay="1">
       <h2>🏫 Учебное заведение</h2>
       <div class="edu-card">
-        <h3>Педагогический колледж №&nbsp;6 (ГБПОУ ПК им. Н.Н. Годовикова)</h3>
+        <h3>ГБПОУ ПК им. Н.Н. Годовикова</h3>
         <p><strong>Сайт:</strong> <a href="https://pkgodovikov.mskobr.ru/" target="_blank" rel="noopener">pkgodovikov.mskobr.ru</a></p>
-        <p>Московское государственное образовательное учреждение. Здесь мы изучаем информационные технологии и программирование, в том числе:</p>
-        <ul>
-          <li>Git и GitHub — контроль версий</li>
-          <li>Markdown — оформление документации</li>
-          <li>HTML и CSS — веб-разработка</li>
-          <li>Python — программирование</li>
-          <li>GitHub Pages — публикация сайтов</li>
-        </ul>
+        <p>Здесь мы изучаем основы информационных технологий, программирования и работы с цифровыми инструментами. Важна не только теория, но и практика: репозитории, сайты, скрипты, публикация результатов и командная работа.</p>
       </div>
     </section>
 
     <section class="edu-block reveal" data-delay="2">
-      <h2>📚 Предмет</h2>
+      <h2>📚 Что проходим</h2>
       <div class="edu-card">
-        <h3>Информационные технологии и программирование</h3>
-        <p>В рамках предмета выполняем практические работы:</p>
         <ol>
-          <li>Основы Git: от репозитория до первого коммита</li>
-          <li>Язык Markdown: оформление документации на GitHub</li>
-          <li>Git локально: работа с GitHub Desktop</li>
-          <li>Ваш первый веб-сайт: HTML + CSS на GitHub Pages</li>
-          <li>Python в облаке: первые шаги в Google Colab</li>
+          <li>Git и GitHub: работа с версиями, коммитами, публикацией проектов</li>
+          <li>Markdown: документация, README, оформление проектных описаний</li>
+          <li>HTML и CSS: верстка, структура, стили, адаптивность</li>
+          <li>Python: логика, скрипты, алгоритмы и небольшие программы</li>
+          <li>GitHub Pages: разворачивание статических сайтов</li>
         </ol>
       </div>
     </section>
 
-    <section class="edu-block reveal" data-delay="3">
-      <h2>🎯 Цели обучения</h2>
-      <div class="tags">
-        <span class="tag">Научиться работать в команде</span>
-        <span class="tag">Освоить Git</span>
-        <span class="tag">Создавать веб-сайты</span>
-        <span class="tag">Писать код на Python</span>
-        <span class="tag">Документировать проекты</span>
+    <section class="feature-grid">
+      <div class="panel-block reveal">
+        <p class="eyebrow">Практика</p>
+        <h3>Как учеба переходит в реальные штуки</h3>
+        <ul class="check-list">
+          <li>Собираем сайты с несколькими страницами</li>
+          <li>Оформляем код и проекты не в вакууме, а под публикацию</li>
+          <li>Учимся работать в репозитории и не ломать общий результат</li>
+          <li>Используем GitHub как рабочую среду для проектов и публикации</li>
+        </ul>
+      </div>
+
+      <div class="panel-block reveal" data-delay="1">
+        <p class="eyebrow">Цели</p>
+        <h3>К чему хотим прийти</h3>
+        <div class="tags">
+          <span class="tag">Уверенная разработка</span>
+          <span class="tag">Рабочие проекты</span>
+          <span class="tag">Портфолио</span>
+          <span class="tag">Командная работа</span>
+          <span class="tag">Понимание кода</span>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-   <p>© <span id="y"></span> Александр Черненко &amp; Матвей Чернявский · ГБПОУ ПК им. Н.Н. Годовикова</p>
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    <p>© <span data-year></span> Александр Черненко &amp; Матвей Чернявский<br>ГБПОУ ПК им. Н.Н. Годовикова</p>
   </footer>
 
-  <script>
-    const bar = document.getElementById('scrollProgress');
-    const onScroll = () => {
-      const h = document.documentElement;
-      const scrolled = h.scrollTop / (h.scrollHeight - h.clientHeight);
-      bar.style.width = Math.min(100, Math.max(0, scrolled * 100)) + '%';
-    };
-    document.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('is-visible');
-          io.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

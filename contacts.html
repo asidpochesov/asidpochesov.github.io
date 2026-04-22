@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Черненко & Чернявский</title>
+  <meta name="description" content="Контакты, GitHub и способы связаться по вопросам учебных и портфолио-проектов.">
+  <meta property="og:title" content="Контакты — Черненко & Чернявский">
+  <meta property="og:description" content="Способы связи и ссылки на профили для знакомства и общения по проектам.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>try{if(localStorage.getItem('am-site-theme')==='light')document.documentElement.dataset.theme='light'}catch(e){}</script>
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header>
+    <nav>
+      <div class="logo">A&amp;M</div>
+      <ul class="menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="skills.html">Навыки</a></li>
+        <li><a href="education.html">Образование</a></li>
+        <li><a href="projects.html">Проекты</a></li>
+        <li><a href="contacts.html" class="active">Контакты</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" aria-label="Переключить тему">◐</button>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section-head reveal">
+      <p class="eyebrow">Связь</p>
+      <h1 class="page-title">Контакты</h1>
+      <p class="section-lead">Если нужно посмотреть репозитории, написать по проекту или просто связаться по учебной работе — вот нормальная точка входа, наконец-то.</p>
+    </section>
+
+    <section class="contact-grid">
+      <article class="contact-card reveal">
+        <div class="card-icon contact-icon-box">
+          <img class="contact-card-icon-img contact-icon-mono" src="images/github-icon.svg" alt="GitHub">
+        </div>
+        <h2>GitHub</h2>
+        <p>Лучшее место, чтобы показать код, структуру проекта и ход работы.</p>
+        <a class="contact-link" href="https://github.com/asidpochesov" target="_blank" rel="noopener">
+          <span>Открыть GitHub →</span>
+        </a>
+      </article>
+
+      <article class="contact-card reveal" data-delay="1">
+        <div class="card-icon contact-icon-box">
+          <img class="contact-card-icon-img contact-icon-mono" src="images/email-icon.svg" alt="Email">
+        </div>
+        <h2>Email</h2>
+        <p>Для учебной связи, вопросов по проектам и нормального делового контакта.</p>
+        <a class="contact-link" href="mailto:ididkisjsu@gmail.com">
+          <span>ididkisjsu@gmail.com</span>
+        </a>
+      </article>
+
+      <article class="contact-card reveal" data-delay="2">
+        <div class="card-icon contact-icon-box">
+          <img class="contact-card-icon-img" src="images/max-icon.svg" alt="MAX">
+        </div>
+        <h2>MAX</h2>
+        <p>Дополнительный способ связи.</p>
+        <a class="contact-link" href="max.html">
+          <span>Открыть MAX →</span>
+        </a>
+      </article>
+    </section>
+
+    <section class="panel-block reveal">
+      <p class="eyebrow">Важно</p>
+      <h3>Что можно написать</h3>
+      <ul class="check-list">
+        <li>Вопросы по учебным проектам</li>
+        <li>Обратная связь по сайту</li>
+        <li>Обсуждение репозиториев и кода</li>
+        <li>Предложения по совместным мини-проектам</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span data-year></span> Александр Черненко &amp; Матвей Чернявский<br>ГБПОУ ПК им. Н.Н. Годовикова</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

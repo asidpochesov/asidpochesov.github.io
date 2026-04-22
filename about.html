@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>О нас — Черненко &amp; Чернявский</title>
-  <link rel="stylesheet" href="style.css">
+  <title>О нас — Черненко & Чернявский</title>
+  <meta name="description" content="Кто такие Александр Черненко и Матвей Чернявский, как они работают и чем интересуются в разработке.">
+  <meta property="og:title" content="О нас — Черненко & Чернявский">
+  <meta property="og:description" content="Немного о команде, подходе к работе и интересах в разработке.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>try{if(localStorage.getItem('am-site-theme')==='light')document.documentElement.dataset.theme='light'}catch(e){}</script>
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
   <div class="grain"></div>
@@ -18,68 +24,97 @@
         <li><a href="about.html" class="active">О нас</a></li>
         <li><a href="skills.html">Навыки</a></li>
         <li><a href="education.html">Образование</a></li>
+        <li><a href="projects.html">Проекты</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
       </ul>
+      <button class="theme-toggle" type="button" aria-label="Переключить тему">◐</button>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
     </nav>
   </header>
 
   <main>
-    <h1 class="page-title reveal">О нас</h1>
+    <section class="section-head reveal">
+      <p class="eyebrow">Команда</p>
+      <h1 class="page-title">О нас</h1>
+      <p class="section-lead">Мы студенты, которые развивают навыки через учебные задания, практику и собственные проекты.</p>
+    </section>
 
     <div class="persons">
-      <div class="person reveal" data-delay="1">
-        <div class="person-avatar">АЧ</div>
+      <article class="person reveal" data-delay="1">
+        <button class="person-avatar-button" type="button" data-avatar-open data-avatar-src="images/9595bb030d2f175fc3599871966b80b6.jpg" data-avatar-name="Александр Черненко" aria-label="Открыть фото Александра Черненко">
+          <span class="person-avatar person-photo">
+            <img src="images/9595bb030d2f175fc3599871966b80b6.jpg" alt="Александр Черненко">
+          </span>
+        </button>
         <h2>Александр Черненко</h2>
-        <p>Студент, увлекающийся программированием. Особый интерес — Python и JavaScript. Люблю решать задачи с помощью кода и разбираться в том, как всё устроено изнутри.</p>
+        <p>Интересуется Python, логикой программ и тем, как из маленькой идеи собрать рабочий инструмент. Любит разбирать, как всё устроено внутри, и доводить решение до понятного состояния.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Git</span>
+          <span class="tag">CLI</span>
+        </div>
         <ul>
-          <li>🐍 Python — основной язык</li>
-          <li>🌐 JavaScript — для веба</li>
-          <li>🔧 Git &amp; GitHub — контроль версий</li>
+          <li>Сильнее всего тянет к Python и автоматизации</li>
+          <li>Любит системный подход и чистую структуру</li>
+          <li>Нравится разбираться в логике и дебаге</li>
         </ul>
-      </div>
+      </article>
 
-      <div class="person reveal" data-delay="2">
-        <div class="person-avatar">МЧ</div>
+      <article class="person reveal" data-delay="2">
+        <button class="person-avatar-button" type="button" data-avatar-open data-avatar-src="images/NVIDIA_Overlay_94rvVbWcaM.png" data-avatar-name="Матвей Чернявский" aria-label="Открыть фото Матвея Чернявского">
+          <span class="person-avatar person-photo">
+            <img src="images/NVIDIA_Overlay_94rvVbWcaM.png" alt="Матвей Чернявский">
+          </span>
+        </button>
         <h2>Матвей Чернявский</h2>
-        <p>Студент, разделяющий страсть к разработке. Вместе с Александром работаем над учебными проектами и изучаем современные технологии.</p>
+        <p>Интересуется веб-разработкой, интерфейсами и современной фронтенд-логикой. Нравится собирать страницы так, чтобы они выглядели цельно, были понятными и не разваливались на мобильных экранах.</p>
+        <div class="tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">UI</span>
+        </div>
         <ul>
-          <li>🐍 Python — основной язык</li>
-          <li>🌐 JavaScript — для веба</li>
-          <li>🔧 Git &amp; GitHub — контроль версий</li>
+          <li>Фокус на визуальной части и поведении сайта</li>
+          <li>Работа с адаптивной версткой и интерфейсами</li>
+          <li>Интерес к интерактивным страницам</li>
         </ul>
-      </div>
+      </article>
     </div>
 
-    <section class="about-extra reveal" data-delay="3">
-      <h2>Наш совместный проект</h2>
-      <p>Этот сайт — часть учебной работы по предмету «Информационные технологии и программирование». Мы создали его совместно, используя HTML, CSS и GitHub Pages.</p>
-      <p>Цель — не просто выполнить задание, а научиться работать в команде с использованием Git и создавать реальные веб-проекты.</p>
+    <section class="feature-grid">
+      <div class="panel-block reveal">
+        <p class="eyebrow">Как работаем</p>
+        <h3>Подход к проектам</h3>
+        <ul class="check-list">
+          <li>Сначала структура, потом оформление</li>
+          <li>Фиксируем изменения через Git</li>
+          <li>Стараемся делать не просто “чтобы сдать”, а чтобы было что показать</li>
+          <li>Доводим страницы до цельного вида, а не до набора случайных блоков</li>
+        </ul>
+      </div>
+
+      <div class="panel-block reveal" data-delay="1">
+        <p class="eyebrow">Почему этот сайт</p>
+        <h3>Зачем вообще нужен этот проект</h3>
+        <p>Сайт работает как стартовое портфолио: здесь собраны проекты, навыки, учебный контекст и основные ссылки.</p>
+        <p>Он нужен как аккуратная база, которую можно постепенно расширять новыми работами и более сильными кейсами.</p>
+      </div>
     </section>
   </main>
 
+  <div class="avatar-modal" id="avatarModal" aria-hidden="true">
+    <div class="avatar-modal-backdrop" data-avatar-close></div>
+    <div class="avatar-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="avatarModalTitle">
+      <button class="avatar-modal-close" type="button" data-avatar-close aria-label="Закрыть">×</button>
+      <img id="avatarModalImage" class="avatar-modal-image" src="" alt="">
+      <p id="avatarModalTitle" class="avatar-modal-title"></p>
+    </div>
+  </div>
+
   <footer>
-   <p>© <span id="y"></span> Александр Черненко &amp; Матвей Чернявский · ГБПОУ ПК им. Н.Н. Годовикова</p>
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    <p>© <span data-year></span> Александр Черненко &amp; Матвей Чернявский<br>ГБПОУ ПК им. Н.Н. Годовикова</p>
   </footer>
 
-  <script>
-    const bar = document.getElementById('scrollProgress');
-    const onScroll = () => {
-      const h = document.documentElement;
-      const scrolled = h.scrollTop / (h.scrollHeight - h.clientHeight);
-      bar.style.width = Math.min(100, Math.max(0, scrolled * 100)) + '%';
-    };
-    document.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('is-visible');
-          io.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
