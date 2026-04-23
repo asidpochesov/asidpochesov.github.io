@@ -1835,9 +1835,9 @@ header.menu-open .menu-toggle span:nth-child(3) { transform: translateY(-7px) ro
     pointer-events: auto;
   }
 
-  .menu li {
-    opacity: 0;
-    transform: translateY(10px);
+.menu li {
+    opacity: 1;
+    transform: none;
   }
   header.menu-open .menu li { animation: menuItemIn 0.3s ease forwards; }
   header.menu-open .menu li:nth-child(1) { animation-delay: 0.06s; }
