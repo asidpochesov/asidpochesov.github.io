@@ -1364,8 +1364,10 @@ footer p { max-width: 60ch; text-align: right; }
 .max-fullscreen-image {
   display: block;
   width: 100%;
-  height: calc(100vh - 72px);
-  object-fit: cover;
+  height: auto;
+  max-height: calc(100vh - 72px);
+  object-fit: contain;
+  background: var(--bg-0);
 }
 
 html[data-theme="light"] .max-page {
