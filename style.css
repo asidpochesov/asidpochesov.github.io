@@ -1933,3 +1933,54 @@ header.menu-open .menu-toggle span:nth-child(3) { transform: translateY(-7px) ro
     transition-duration: 0.01ms !important;
   }
 }
+/* === МОБИЛЬНАЯ АДАПТАЦИЯ === */
+
+/* Кнопка-гамбургер (скрыта на десктопе) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #fff; /* подбери под цвет твоего хедера */
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 12px 16px;
+  }
+}
