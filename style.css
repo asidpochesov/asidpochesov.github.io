@@ -1797,22 +1797,23 @@ header.menu-open .menu-toggle span:nth-child(3) { transform: translateY(-7px) ro
   }
   .logo { flex: 1; }
 
-  .menu {
+.menu {
     position: fixed;
-    top: 70px;
-    left: 0; right: 0; bottom: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 280px;
     flex-direction: column;
     align-items: stretch;
     gap: 6px;
-    padding: 20px 16px 40px;
+    padding: 80px 16px 40px;
     font-family: var(--mono);
     font-size: 1rem;
     background: var(--bg-0);
-    border-top: 1px solid var(--line-strong);
+    border-left: 1px solid var(--line-strong);
     overflow-y: auto;
     z-index: 95;
-    /* hidden state */
-    transform: translateY(calc(-100% - 72px));
+    transform: translateX(100%);
     opacity: 0;
     pointer-events: none;
     transition: transform 0.38s cubic-bezier(0.22, 1, 0.36, 1),
@@ -1829,7 +1830,7 @@ header.menu-open .menu-toggle span:nth-child(3) { transform: translateY(-7px) ro
   }
 
   header.menu-open .menu {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
     pointer-events: auto;
   }
