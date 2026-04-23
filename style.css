@@ -964,7 +964,7 @@ html[data-theme="light"] .skill-icon {
   letter-spacing: -0.01em;
   margin-bottom: 12px;
 }
-.person p { color: var(--text-dim); margin-bottom: 18px; }
+.person p { color: var(--text-dim); margin-bottom: 28px; }
 
 .person ul {
   list-style: none;
@@ -973,6 +973,7 @@ html[data-theme="light"] .skill-icon {
   gap: 8px;
   font-family: var(--mono);
   font-size: 0.88rem;
+  margin-top: 16px;  
 }
 .person ul li {
   padding: 8px 12px;
@@ -1135,6 +1136,7 @@ html[data-theme="light"] .skill-icon {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 16px
 }
 .tag {
   display: inline-flex;
